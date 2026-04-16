@@ -1147,6 +1147,15 @@ footer {
     color: #E8570A;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 45px;
+}
 /* SVG STYLING */
 .logo-circle {
     fill: #2E1F10;

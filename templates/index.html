@@ -32,7 +32,7 @@
       <circle cx="10" cy="28" r="2.5" fill="#FF7B35"/>
     </svg>
      -->
-    <img src="{% static 'images/AElogko.png' %}" alt="OrangeRoute Logo" class="nav-logo-img">
+    <img src="{% static 'images/AElogo.png' %}" alt="OrangeRoute Logo" class="nav-logo-img">
   
     <div class="nav-brand">
       <span class="nav-brand-name">OrangeRoute</span>
@@ -490,7 +490,7 @@
     <!-- BRAND -->
     <div class="footer-brand">
         <div class="footer-logo">
-            <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+            {% comment %} <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="22" class="logo-circle"/>
                 <ellipse cx="24" cy="24" rx="22" ry="10" class="logo-ellipse"/>
                 <line x1="2" y1="24" x2="46" y2="24" class="logo-line"/>
@@ -498,7 +498,9 @@
                 <path d="M10 28 Q20 10 38 20" class="logo-path"/>
                 <polygon points="38,20 32,17 35,23" class="logo-arrow"/>
                 <circle cx="10" cy="28" r="2.5" class="logo-dot"/>
-            </svg>
+            </svg> {% endcomment %}
+            <img src="{% static 'images/AElogo.png' %}" alt="OrangeRoute Logo" class="nav-logo-img">
+  
 
             <span class="footer-brand-name">OrangeRoute</span>
         </div>

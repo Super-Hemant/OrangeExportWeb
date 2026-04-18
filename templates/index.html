@@ -8,8 +8,13 @@
   <title>OrangeRoute – Global Trade, Rooted in Trust</title>
    <!-- CSS FILE -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/leaflet.css' %}">
+  
     <!-- JS FILE -->
   <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/leaflet.js' %}"></script>
+  <script src="{% static 'js/leaflet.curve.js' %}"></script>
+
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
 </head>
@@ -254,6 +259,7 @@
   </div>
 </section>
 
+
 <!-- GLOBAL REACH -->
 <section class="reach" id="reach">
 
@@ -271,7 +277,7 @@
 
   <!-- MAP -->
   <div class="reach-map-container reveal">
-    <svg viewBox="0 0 900 420" class="world-svg" xmlns="http://www.w3.org/2000/svg">
+    {% comment %} <svg viewBox="0 0 900 420" class="world-svg" xmlns="http://www.w3.org/2000/svg">
 
       <defs>
         <pattern id="grid" width="45" height="35" patternUnits="userSpaceOnUse">
@@ -316,8 +322,10 @@
 
       <text class="india-text" x="590" y="215">INDIA</text>
 
-    </svg>
-
+    </svg> {% endcomment %}
+    
+    <div id="global-map"></div>
+    
     <p class="reach-note">
       ● Origin: India | Trade routes spanning 50+ countries worldwide
     </p>
@@ -417,7 +425,7 @@
             <div class="contact-item-text">
                 <div class="contact-item-label">Call Us</div>
                 <div class="contact-item-val"> +91 96650 37542 <br>
-  +91 78759 16169 <br>+91 96233 56396</div>
+                 +91 78759 16169 <br>+91 96233 56396</div>
             </div>
         </div>
     </div>
@@ -545,7 +553,7 @@
         <ul class="footer-links">
             <li><a href="#">sales@orangeroute.in</a></li>
             <li><a href="#">+91 96650 37542 <br>
-+91 78759 16169 <br>+91 96233 56396</a></li>
+            +91 78759 16169 <br>+91 96233 56396</a></li>
             <li><a href="#">Nagpur, Maharashtra, India</a></li>
             <li><a href="#contact">Request a Quote</a></li>
         </ul>
@@ -564,6 +572,13 @@
     </span>
   </div>
 </footer>
+
+<!-- MAP LIBRARIES -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-curve/leaflet.curve.js"></script>
+
 
 </body>
 </html>

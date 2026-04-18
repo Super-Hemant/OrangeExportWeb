@@ -317,6 +317,7 @@
     background-size: 40px 40px;
   }
 
+  
   .hero-globe {
     position: absolute;
     top: 50%;
@@ -782,6 +783,33 @@
     letter-spacing: 0.1em;
 }
 
+/*  */
+/*  */
+/* 🌍 GLOBAL MAP */
+#global-map {
+  height: 420px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  #global-map {
+    height: 320px;
+  }
+}
+
+/* Smooth interaction */
+.leaflet-container {
+  background: #0f172a;
+  touch-action: pan-x pan-y;
+}
+
+
+
+
 /* REGIONS */
 .reach-regions {
     display: flex;
@@ -1245,7 +1273,7 @@ footer {
     transform: none;
   }
  
-/* 
+
 @media (max-width: 768px) {
     .footer-bottom {
         flex-direction: column;
@@ -1321,4 +1349,15 @@ footer {
     justify-content: center;
     gap: 1rem;
   }
-}  */
+} 
+
+@media (max-width: 768px) {
+  .hero-right {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .hero-globe {
+    max-width: 300px;
+  }
+}

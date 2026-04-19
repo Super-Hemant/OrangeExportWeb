@@ -22,6 +22,7 @@
     background: var(--cream);
     color: var(--dark);
     overflow-x: hidden;
+    
   }
 
   /* ─── NOISE TEXTURE OVERLAY ─── */
@@ -41,7 +42,7 @@
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 100;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,7 +143,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
+    padding-top: 120px;
     position: relative;
     overflow: hidden;
   }
@@ -792,7 +793,14 @@
   border-radius: 20px;
   overflow: hidden;
   margin-top: 30px;
+  position: relative;
+  z-index: 0;
+  margin-top: 20px;
 }
+
+
+
+
 
 /* Mobile optimization */
 @media (max-width: 768px) {
@@ -805,6 +813,7 @@
 .leaflet-container {
   background: #0f172a;
   touch-action: pan-x pan-y;
+   z-index:  0!important;
 }
 
 

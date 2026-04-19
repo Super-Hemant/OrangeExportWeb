@@ -6,23 +6,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OrangeRoute – Global Trade, Rooted in Trust</title>
-   <!-- CSS FILE -->
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/leaflet.css' %}">
-
-
-  <!-- MAP LIBRARIES -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet-curve/leaflet.curve.js"></script>
   
+  
+  <!-- ✅ Leaflet CSS -->
+  {% comment %} <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> {% endcomment %}
+  <link rel="stylesheet" href="{% static 'css/leaflet.css' %}">
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% comment %} <link rel="stylesheet" href="{% static 'css/leaflet.css' %}"> {% endcomment %}
+
+
+
+  <!-- ✅ Leaflet JS -->
+  {% comment %} <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> {% endcomment %}
+  <script src="{% static 'js/leaflet.js' %}"></script>
+  <!-- ✅ Curve plugin -->
+  {% comment %} <script src="https://unpkg.com/leaflet-curve@1.0.0/leaflet.curve.js"></script> {% endcomment %}
+  <script src="{% static 'js/leaflet.curve.js' %}"></script>
+
+  {% comment %} <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-curve/leaflet.curve.js"></script>
+   {% endcomment %}
 
 
     <!-- JS FILE -->
   <script src="{% static 'js/script.js' %}"></script>
-  <script src="{% static 'js/leaflet.js' %}"></script>
-  <script src="{% static 'js/leaflet.curve.js' %}"></script>
+  {% comment %} <script src="{% static 'js/leaflet.js' %}"></script>
+  <script src="{% static 'js/leaflet.curve.js' %}"></script> {% endcomment %}
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
